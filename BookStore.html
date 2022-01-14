@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/script.js" defer></script>
+  <title>BOOK STORE</title>
+</head>
+
+<body>
+  <div id="content">
+    <h1>책을 검색하세요</h1>
+    <div id="search">
+      <fieldset>
+        <input id="searchBox" type="text" size="40" >
+        <input id="btnSearch" type="submit" value="검색">
+      </fieldset>
+    </div>
+    
+    <div id ="searchBook">
+      <div id="textArea">
+      </div>
+      
+      <div id="basket">
+        <div class="header">
+          <h2 class="widgetHeader"><span class="title">BOOK CART</span></h2>
+        </div>
+
+        <div class="selectBook">
+        </div>
+
+        <div class="selectPrice">
+          <div>
+            <h3>정 가 : </h3>
+            <h3 class="totPrice"></h3>
+          </div>
+          <div>
+            <h3>할인금액 : </h3>
+            <h3 class="totDiscount red"></h3>
+          </div>
+          <div>
+            <h3>수 량 : </h3>
+            <h3 class="count blue"></h3>
+          </div>
+          <div class="total">
+            <h3>합 계 : </h3>
+            <h3 class="totalPrice red"></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
