@@ -1,0 +1,146 @@
+#content {
+  position: relative;
+  width: 1750px;
+  margin: 0 auto;
+}
+#content h1 {
+  text-align: center;
+}
+#search fieldset {
+  text-align: center;
+  border: 0;
+  margin-bottom: 20px;
+}
+#search #searchBox {
+  padding: 10px;
+  margin-left: 40px;
+  font-size: 18px;
+}
+#search #btnSearch{
+  padding: 7px 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#textArea { 
+  width: 1260px;
+  min-height: 1200px;
+  display: inline-block;
+  padding: 10px;
+}
+#textArea .book { 
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 400px;
+  margin: 10px;
+  border: 1px solid #eee;
+  cursor: pointer;
+}
+#textArea .book:hover {
+  background-color: bisque;
+}
+
+#textArea .book .img > img{ 
+  width: 180px;
+}
+#textArea .book .img { 
+  display: inline-block;
+}
+
+#textArea .book .text { 
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  margin-left: 20px;
+}
+
+#basket {
+  float: right;
+  width: 400px;
+  border: 1px solid #ddd;
+}
+#basket .header {
+  height: 50px;
+  width: 400px;
+  border-bottom: 1px double #555;
+  font-weight: bold;
+  text-align: center;
+}
+#basket .header h2 {
+  line-height: 50px;
+  width: 400px;
+  margin: 0;
+  padding: 10px 0;
+  /* background-color: #9bb7d4; */
+  background-color: #555;
+  color: #fff;
+  position: absolute;
+}
+#basket .selectBook {
+  min-height: 500px;
+  position: relative;
+  padding: 20px 10px;
+}
+#basket .selectBook > div::after {
+  content: "X";
+  text-align: 200px;
+  font-weight: bold;
+}
+#basket .selectBook > div:hover {
+  background-color: rgba(201, 201, 201, 0.2);
+}
+#basket .book .img { 
+  display: inline-block;
+  position: relative;
+  top: 15px;
+}
+#basket .book .text { 
+  display: inline-block;
+  width: 200px;
+  font-size: 0.8em;
+  top: 0;
+  margin-left: 20px;
+}
+#basket .selectPrice {
+  border-top: 2px solid #ddd ;
+  padding-top: 20px;
+}
+
+#basket .selectPrice div:not(:last-child) {
+  padding: 0 20px;
+  line-height: 15px;
+}
+#basket .selectPrice div:not(.total) h3:first-child {
+  display: inline-block;
+  width: 100px;
+}
+#basket .selectPrice div:not(:last-child) h3:last-child {
+  display: inline-block;
+  width: 200px;
+}
+#basket .selectPrice .total {
+  font-size: 1.4em;
+  height: 60px;
+  font-weight: bold;
+  background-color: #eee;
+  border-top: 1px double #999;
+  padding: 10px 10px 10px 20px;
+}
+#basket .selectPrice .total > h3 {
+  display: inline-block;
+  line-height: 60px;
+  margin: 0;
+  width: 150px;
+}
+#basket .selectPrice .blue {
+  color: blue;
+  font-weight: bold;
+}
+#basket .selectPrice .red {
+  color: red;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
